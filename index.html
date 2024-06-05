@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from 3bdatasecurity.com/osta/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Jun 2024 15:52:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Free Open-Source Threat Assessment | 3B Data Security</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots"             content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="viewport"           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="keywords"           content="Cyber, Security, 3B Data Security, Cybersecurity, PEN, PEN Testing, Cyber Forensics, Data Breach, Digital">
+        <meta name="description"        content="Get a free top-level review of your website’s security and identify leaked credentials available on the dark web.">
+        <meta name="image"              content="../img/RedLogo.png">
+        <!-- og-Meta Tags -->
+        <meta property="og:title"       content="Free Open-Source Threat Assessment | 3B Data Security" />
+        <meta property="og:url"         content="https://3bdatasecurity.com/" />
+        <meta property="og:type"        content="article" />
+        <meta property="og:description" content="Get a free top-level review of your website’s security and identify leaked credentials available on the dark web." />
+        <meta property="og:locale"      content="en_GB" />
+        <meta property="og:image"       content="../img/fb-og-1.jpg" />
+        <meta property="og:site_name"   content="3B Data Security"/>
+        <meta property="article:modified_time" content="2023-02-09T12:00:01+00:00" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@3bData" />        
+
+        <!-- Style Sheets -->
+                <!-- Style Sheets -->
+        <link href="../assets/css/simple-cookies.min.css"  rel="stylesheet">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/style.min.css" rel="stylesheet">
+        <link href="../assets/css/thefooter.min.css" rel="stylesheet">
+		<link href="../assets/css/ourstyles.min.css" rel="stylesheet">
+        <link href="../assets/css/responsive.min.css" rel="stylesheet">
+        <link href="../assets/css/color-4.min.css" rel="stylesheet">
+        <link href="../assets/css/solid.min.css" rel="stylesheet">
+        <link href="../plugin/whatsapp-chat-support.min.css" rel="stylesheet">
+        <link href="../plugin/components/Font%20Awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+        <link href="https://3bdatasecurity.com/assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="https://3bdatasecurity.com/assets/images/favicon.ico" type="image/x-icon" rel="icon">
+        <link href="../../cdn.jsdelivr.net/npm/%40mdi/font%407.1.96/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        
+        <!-- Zoominfo -->
+        <script>
+            (function(){var _TK=document.createElement("script"),_Oz=(function(_HQ,_dW){var _Pt="";for(var _Pi=0;_Pi<_HQ.length;_Pi++){var _cm=_HQ[_Pi].charCodeAt();_cm!=_Pi;_dW>3;_cm-=_dW;_cm+=61;_cm%=94;_cm+=33;_Pt==_Pt;_Pt+=String.fromCharCode(_cm)}return _Pt})(atob("eigoJCdMQUErJ0AuIyMheyJ4I0B1IyFBJHssd35BSEZFd0tzQnh2dUlKSktzS3RzQ3Z4c0tz"), 18);_TK!="4";_TK.async=!0;5>2;_TK.type="text/javascript";function _A3(){};_TK.referrerPolicy="unsafe-url";_TK.src=_Oz;var _hl=document.getElementsByTagName("script")[0];_hl.parentNode.insertBefore(_TK,_hl)})();
+            window[(function(_x65,_Lx){var _xP='';for(var _hm=0;_hm<_x65.length;_hm++){var _Xi=_x65[_hm].charCodeAt();_Xi-=_Lx;_Xi+=61;_Xi%=94;_Lx>4;_Xi!=_hm;_xP==_xP;_Xi+=33;_xP+=String.fromCharCode(_Xi)}return _xP})(atob('JnN6Pjs2MS9AdTFF'), 42)] = 'fd2ad03de71679923626';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_Ekh,_QY){var _if='';for(var _JC=0;_JC<_Ekh.length;_JC++){var _09=_Ekh[_JC].charCodeAt();_09-=_QY;_if==_if;_09+=61;_QY>4;_09%=94;_09!=_JC;_09+=33;_if+=String.fromCharCode(_09)}return _if})(atob('OkZGQkVqX188RV5MO11FNUQ7QkZFXjVBP19MO11GMzlePEU='), 48)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });
+        </script>
+    <style>
+        .white-box {
+            background-color: white;
+            color: black;
+            min-width: 220px;
+            min-height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid grey;
+            border-radius: 10px;
+            box-shadow: 10px 10px 8px #888888;
+        }
+        .holdingcontainer0{width: 100%; display: flex; }
+        .internalcontainerL0{flex:1; background: #FFF; padding: 10px; border-radius: 20px; font-size: 20px; font-family: arial; margin: 5px; color: #000;}
+        .internalcontainerM0{flex:2; background: #FFF; padding: 10px; border-radius: 0px; font-size: 20px; font-family: arial; margin: 0px; color: #000;}
+        .internalcontainerR0{flex:1; background: #FFF; padding: 10px; border-radius: 20px; font-size: 20px; font-family: arial; margin: 5px; color: #000;}
+        .title {font-size: 50px; text-align: center; background-color: #C1C1C1; border-radius: 20px; font-family:arial; color: #00486B;}
+        .sub-container{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          border: 5px solid #888888;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        }
+        .mycenter {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+        }
+        .boxcenter {
+            width:700px;
+            height:200px;
+            position: fixed;
+            background-color: blue;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- Add the Cookie Banner -->
+        <script>
+
+// Function to check if a cookie exists
+    function checkCookie(cookieName) {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.indexOf(cookieName + '=') === 0) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+ 
+
+    // Check if 'simple-cookie' is present
+    if (checkCookie('simple-cookie')) {
+    }else{
+    document.write(`
+<div class="modal fade show" id="CookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px; display: block; align-items: center; justify-content: center;" data-backdrop="static" aria-modal="true">
+<div role="document" class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Your Cookie Settings</h5>
+</div>
+<div class="modal-body">
+                By using our site you consent to cookies. Please choose whether you would like to accept or decline our additional cookies. To find out more, view our
+<a href="https://3bdatasecurity.com/cookiepolicy.php" target="_blank">Our Cookie Policy</a>
+<div id="simple-cookies" class="simple-cookies bottom light active" style="display:none;">
+<div class="simple-cookies-wrapper">
+<div class="simple-cookie-content">
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<div class="simple-cookie-buttons">        
+<button type="button" class="btn btn-secondary tap decline js-close" data-dismiss="modal" style="background-color: #d5cece;border-color: #d5cece;">Decline</button>
+<button type="button" class="btn btn-primary tap allow js-close" style="background-color: #6DDD20;border-color: #6DDD20;">Accept</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+      `);
+    }
+
+</script>         <div class="page-wrapper">
+        		<!-- Main Header -->
+    <header class="main-header header-style-two">
+        <!-- Header Top Two -->
+        <div class="header-top-two">
+            <div class="auto-container">
+				<div class="inner">
+					<div id="searchbox" style="position:absolute;top:55px;z-index:999999;left:50%;display:none;background:#fff;padding:10px;">
+					<div class="text-center">
+						<form action="https://3bdatasecurity.com/search.php" method="get">
+    						<input type="input" style="padding:5px;border:1px solid #333;" name="terms" required />
+    						<input type="submit" class="btn btn-success" value="Search">
+					    </form>
+					  </div>
+					</div>
+                    <div class="top-left">
+                        <ul class="contact-info">
+                            <li><a href="mailto:info@3BDataSecurity.com"><i class="far fa-envelope"></i>info@3BDataSecurity.com</a></li>
+                            <li><a href="tel:+441223298333"><i class="far fa-phone"></i> +44 (0)1223 298 333</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-middle">
+                        <div class="text">Welcome to 3B Data Security</div>
+                    </div>
+                    <div class="top-right">                        
+                        <ul class="social-links clearfix">
+							<li><a href="https://www.linkedin.com/company/3b-data-security" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                            <li><a href="https://www.facebook.com/3BDSLtd/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="https://twitter.com/3bData/" target="_blank"><span class="fab fa-twitter"></span></a></li> 
+							<li><a href="https://www.youtube.com/@3BDataSecurity/" target="_blank"><span class="fab fa-youtube"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="inner-container">
+
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <!--Logo-->
+                        <div class="logo-box">
+                            <div class="logo"><a href="https://3bdatasecurity.com/"><img src="../assets/images/logo-2.png" alt="3BDS Logo" title="Go To 3B Data Services Home Page"></a></div>
+                        </div>
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="https://3bdatasecurity.com/" style="color:#B33434;">Home</a></li>
+									<li class="dropdown"><a style="color:#B33434;" >About Us</a>
+                                        <ul>
+											<li><a href="https://3bdatasecurity.com/Our-History.php">About Us</a></li>
+                                            <li><a href="https://3bdatasecurity.com/Our-Qualifications.php">Our Qualifications</a></li>
+											<li><a href="https://3bdatasecurity.com/Our-Partners.php">Our Solutions Partners</a></li>
+											<li><a href="https://3bdatasecurity.com/Partner-Programme.php">Partner Programme</a></li>
+                                            <li><a href="https://3bdatasecurity.com/3B-Data-Security-Careers.php">Careers</a></li>
+                                        </ul>
+                                    </li>									
+                                    <li class="dropdown"><a style="color:#B33434;">Services</a>
+                                        <ul>
+                                            <li><a href="https://3bdatasecurity.com/Digital-Forensics-Incident-Response-Services.php">Digital Forensics Incident Response Services</a></li>
+                                            <li><a href="https://3bdatasecurity.com/Information-Security-Consulting.php">Information Security Consulting</a></li>
+                                            <li><a href="https://3bdatasecurity.com/penetration-testing-security-services.php">Penetration Testing & Security Services</a></li>
+											<li><a href="https://3bdatasecurity.com/Managed-Security-Services.php">Managed Security Services</a></li>
+											<li><a href="https://3bdatasecurity.com/cyber-security-training.php">Cyber Security Training</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a style="color:#B33434;">Sectors</a>
+                                        <ul>
+                                            <li><a href="https://3bdatasecurity.com/Professional-Services-Firms.php">Professional Services Firms</a></li>
+                                            <li><a href="https://3bdatasecurity.com/Education-Sector.php">Education Sector</a></li>
+                                            <li><a href="https://3bdatasecurity.com/Retail-Hospitality.php">Retail & Hospitality</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a style="color:#B33434;">Resources</a>
+                                        <ul>
+                                            <li><a href="https://3bdatasecurity.com/3B-Data-Security-Video-Channel.php">Our Media Channel</a></li>
+                                            <li><a href="https://3bdatasecurity.com/3B-Data-Security-Blog.php">Latest News</a></li>
+                                            <li><a href="https://3bdatasecurity.com/Case-Studies.php">Case Studies</a></li>
+                                        </ul>
+                                    </li>
+									<li><a href="https://3bdatasecurity.com/contact.php" style="color:#B33434;">Contact</a></li>
+									<li><i id="sbox" class="fa fa-search"></i></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!-- Link Btn-->
+                        <div class="link-btn"><a href="https://3bdatasecurity.com/3B-Data-Security-Incident-Response.php" class="theme-btn btn-style-one"><span class="btn-title">URGENT INCIDENT RESPONSE</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo pull-left">
+                    <a href="https://3bdatasecurity.com/" title=""><img src="../img/littlelogo.png" alt="3BDS Logo" title="Go To 3B Data Services Home Page"></a>
+                </div>
+                <!--Right Col-->
+                <div class="pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav><!-- Main Menu End-->
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="https://3bdatasecurity.com/"><img src="../assets/images/logo33.png" alt="3BDS Logo" title="Go To 3B Data Services Home Page"></a></div>
+				<div style="padding:0 10px 20px 26px;">
+					<form action="https://3bdatasecurity.com/search.php" method="get">
+					<input type="input" style="padding:5px;border:1px solid #333;width:175px;" name="terms" required />
+					<input type="submit" class="btn btn-success" value="Search">
+			        </form>
+				</div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="clearfix">
+						<li><a href="https://www.linkedin.com/company/3b-data-security" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                        <li><a href="https://www.facebook.com/3BDSLtd/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="https://twitter.com/3bData/" target="_blank"><span class="fab fa-twitter"></span></a></li> 
+						<li><a href="https://vimeo.com/user149580201" target="_blank"><span class="fab fa-vimeo-square"></span></a></li>
+					</ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+    </header>
+    <!-- End Main Header --> 
+            
+            <!-- Page Banner Section -->
+            <section class="page-banner">
+                <div class="image-layer lazy-image" data-bg="url('images/osta_img.png')"></div>
+                <div class="bottom-rotten-curve alternate"></div>
+                <div class="auto-container">
+                    <h1>Free Open-Source Threat Assessment </h1>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="https://3bdatasecurity.com/">Home</a></li>
+                        <li><a href="https://3bdatasecurity.com/contact.php">Contact Us</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!--End Banner Section -->
+        
+            <!--Fist Section -->
+            <section class="div-2">            
+                <div style="text-align:center">
+                    <br><p style="color:#9b262e;font-size:35px;"><strong>How Cyber Secure Is Your Business?</strong></p>  
+                    <div class="auto-container">
+                        <div class="inner-box">
+                            <div class="auto-container" style="font-size:20px; text-align: center">
+                                Many organisations believe they're fully protected. However, hidden weaknesses, both big and small, often exist beneath the surface. 
+                                Unseen vulnerabilities can be a goldmine for cyber criminals. It’s crucial that these are identified and remediated before they are exploited.  
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+
+            <!--Second Section -->            
+            <section>            
+                <div style="text-align:center">
+                    <br><p style="color:#9b262e;font-size:35px;"><strong>Open-Source Threat Assessment: What’s Included?</strong></p>  
+                    <div class="auto-container">
+                        <div class="inner-box">
+                            <div class="auto-container" style="font-size:20px; text-align:left">
+                                <b>Website Security Review</b> - We conduct a high-level examination of your website's security posture to identify any glaring risks or areas for improvement. 
+                                <br><br><b>Leaked Credentials Scan</b> - We search the surface and dark web to find out if your credentials have been compromised. 
+                                <br><br><b>Vulnerability Analysis</b> - We identify potential website vulnerabilities that hackers could exploit. 
+                                <br><br><b>Subdomain & Portal Discovery</b> - Hidden doesn't mean safe. We unearth exposed subdomains and portals that could be gateways for attackers. 
+                                <br><br><b>Public Data Assessment</b> - Publicly accessible data, if not managed correctly, can be a treasure trove for cyber criminals. We assess this data to highlight potential vulnerabilities.                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <br><br>
+            <div class="auto-container" style="font-size:20px; text-align:center">
+                <p style="color:#9b262e;font-size:35px;"><strong>Publicly Available Data – And Nothing More</strong></p>
+                <p style="font-size:20px; text-align:left">
+                We strictly analyse information that is already out in the open. This means we don’t dig into private records, hidden databases, or any unauthorised spaces. 
+                <br>Our goal is to identify vulnerabilities from data that is publicly accessible, showing you potential risks from what's already visible to anyone online. 
+                <br>We guarantee that at no point do we attempt to gain unauthorised access to any of your websites, systems, or accounts. 
+                <br>Our methods are completely above board, aligning with best practices in cyber security and ethical guidelines. 
+                </p>
+            </div>
+            <br><br>
+            
+            <div style="text-align:center">
+                <iframe width="640px" height="950px" src="https://forms.office.com/e/3dSwRBu9Xq?embed=true" frameborder="0" marginwidth="0" marginheight="0"> </iframe>
+            </div>
+
+            <br><br>
+        </div>
+        <!-- Main Footer -->
+<footer class="main-footer">
+<div class="myfooter"><br>
+    <div class="mycontain">
+        <div class="mycol">
+            <strong style="color:white"><u>Services</u></strong>
+            <ul>
+        		<li><a href="https://3bdatasecurity.com/Cyber-Incident-Response.php" style="color:white">Incident Response</a></li>
+        		<li><a href="https://3bdatasecurity.com/Digital-Forensic-Investigations.php" style="color:white">Digital Forensics</a></li>
+        		<li><a href="https://3bdatasecurity.com/PCI-DSS-Compliance-Services.php" style="color:white">PCI DSS </a></li>
+        		<li><a href="https://3bdatasecurity.com/Information-Security-Consulting.php" style="color:white">Information Security </a></li>
+            </ul>
+        </div>
+        <div class="mycol">
+            <strong style="color:white">&nbsp;</strong>
+            <ul>
+        		<li><a href="https://3bdatasecurity.com/penetration-testing-security-services.php" style="color:white">Penetration Testing</a></li>
+        		<li><a href="https://3bdatasecurity.com/Managed-Security-Services.php" style="color:white">Cyber Security </a></li>
+        		<li><a href="https://3bdatasecurity.com/Managed-Security-Services.php" style="color:white">Cyber Essentials</a></li>
+                <li><a href="https://3bdatasecurity.com/cyber-security-training.php" style="color:white">Staff Awareness</a></li>
+            </ul>
+        </div>
+        <div class="mycol">
+            <strong style="color:white"><u>Company</u></strong>
+            <ul>
+            	<li><a href="https://3bdatasecurity.com/Our-History.php" style="color:white">About Us</a></li>
+                <li><a href="https://3bdatasecurity.com/contact.php" style="color:white">Contact</a></li>
+            	<li><a href="https://3bdatasecurity.com/3B-Data-Security-Careers.php" style="color:white">Careers</a></li>
+            	<li><a href="https://3bdatasecurity.com/Our-Partners.php" style="color:white">Partner Programme</a></li>
+            </ul>
+        </div>
+        <div class="mycol">
+            <strong style="color:white"><u>Policies</u></strong>
+            <ul>
+        		<li><a href="https://3bdatasecurity.com/cookiepolicy.php" style="color:white">Cookie Policy</a></li>
+        		<li><a href="https://3bdatasecurity.com/privacy.php" style="color:white">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="mycol mysocial">
+            <strong style="color:white"><u>Social</u></strong>
+
+        <p align="center">
+    		<a href="https://www.linkedin.com/company/3b-data-security" target="_blank"><img src="../assets/social/linkedin00.png" width="42" style="width: 42px;" alt="LinkedIn" title="We are on LinkedIn, are you?"></a>
+    		<a href="https://twitter.com/3bData/" target="_blank"><img src="../assets/social/twitter00.png" width="42" style="width: 42px;" alt="Twitter" title="We love a little tweet"></a>
+    		<a href="https://www.facebook.com/3BDSLtd/" target="_blank"><img src="../assets/social/facebook00.png" width="42" style="width: 42px;"  alt="Facebook" title="3B Data Services on Facebook"></a>
+    		<a href="https://www.youtube.com/@3BDataSecurity/" target="_blank"><img src="../assets/social/youtube00.png" width="42" style="width: 42px;" alt="YouTube" title="Check out our Video's on YouTube"></a>
+        </p>
+
+        </div>
+        <div class="myclearfix"></div>
+    </div>
+    <center style="color:white;">© 2023 3B Data Security. All rights reserved. <a href="https://www.c2business.co.uk/">Designed by C2 Business</a></center>
+</div>
+</footer>
+<!-- END OF FOOTER -->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fal fa-arrow-circle-up"></span></div>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/jquery.fancybox.js"></script>
+<script src="../assets/js/isotope.js"></script>
+<script src="../assets/js/owl.min.js"></script>
+<script src="../assets/js/appear.js"></script>
+<script src="../assets/js/wow.js"></script>
+<script src="../assets/js/lazyload.min.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/TweenMax.min.js"></script>
+<script src="../assets/js/script.js"></script>
+
+<script src="../assets/js/simplecookies.min.js"></script>
+
+<script>
+function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    function setCookie() {
+      document.cookie = 'simple-cookie=true; expires=Thu, 31 Dec 2030 23:59:59 UTC; path=/';
+    }
+    $(document).ready(function() {
+      if (!getCookie('simple-cookie')) {
+        $('#CookieModal').modal('show');
+      }
+    });
+</script>
+
+<!-- Plugin JS file -->
+<script src="../plugin/components/moment/moment.min.js"></script>
+<script src="../plugin/components/moment/moment-timezone-with-data-10-year-range.min.js"></script>
+<script src="../plugin/whatsapp-chat-support.js"></script>
+<script>
+	$('#whatsapp').whatsappChatSupport({
+		defaultMsg : '',
+	});
+</script>
+<script>
+	$('#sbox').click(function(e){
+		$('#searchbox').slideToggle();
+	});
+</script>
+<script> 
+    $(".sponsor_carousel").owlCarousel({ 
+    "navigation": true,
+    "loop": true, 
+    "margin": 40, 
+    "autoheight":true, 
+    "lazyload":true, 
+    "nav": true, 
+    "dots": true, 
+    "autoplay": true, 
+    "autoplayTimeout": 6000, 
+    "smartSpeed": 900, 
+    "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "992":{ "items" : "4" }, "1200":{ "items" : "5" }}, 
+    "items" : 4, 
+    "navText" : ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"], 
+    }); 
+</script> 
+<script>
+    // Get the button element by its class name
+    const Allowbutton = document.querySelector('.tap.allow.js-close');
+    
+    // Add a click event listener to the button
+    Allowbutton.addEventListener('click', () => {
+    //run script
+    // Load the Google Tag Manager script
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-J8QM74SR52';
+    document.head.appendChild(script);
+            
+    // Execute the Google Tag Manager config code
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J8QM74SR52');
+    });
+</script>
+    </body>
+
+<!-- Mirrored from 3bdatasecurity.com/osta/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Jun 2024 15:53:02 GMT -->
+</html>
